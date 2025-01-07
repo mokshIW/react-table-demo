@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import StatCards from "@/components/StatCards";
+import TableArea from "@/components/TableArea";
 import { Card } from "@/components/ui/card";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Card>
         <Navbar />
         <StatCards />
+        <TableArea />
       </Card>
     </div>
   );
