@@ -5,6 +5,7 @@ import { Download } from "lucide-react";
 import { Card } from "./ui/card";
 import { Tabs, TabsContent, TabsTrigger, TabsList } from "./ui/tabs";
 import { Button } from "./ui/button";
+import PaginationArea from "./Pagination/PaginationArea";
 
 export default function TableArea() {
   const tabItems = [
@@ -70,6 +71,7 @@ export default function TableArea() {
       </div>
 
       {/* Pagination Area */}
+      <PaginationArea />
     </Card>
   );
 }
