@@ -4,9 +4,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const poppins = Poppins({
-  weight: "400",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
-  display: "swap",
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased`}>
+      <body className={`${poppins.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
